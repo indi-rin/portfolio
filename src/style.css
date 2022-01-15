@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background: linear-gradient(to bottom right, #8fb8de, #9a94bc);
+  height: 50vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  display: block;
+}
+
+nav a {
+  display: inline-block;
+  margin: 1em;
+}
+
+form div {
+  margin: 1em;
+  display: inline-block;
+}
