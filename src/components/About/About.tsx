@@ -1,7 +1,7 @@
-import React from "react";
+import React, { FC } from "react";
 import { Container, BioContainer, ProfilePic, Name, Bio } from "./About.style";
 
-const About = () => {
+const About: FC = () => {
   return (
     <Container>
       <ProfilePic src="profile.jpg" />

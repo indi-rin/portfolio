@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import { Navback, NameHeader, InnerDiv } from "./Navbar.style";
 import { GiCompass } from "react-icons/gi";
 
-const Navbar = () => {
+const Navbar: FC = () => {
   return (
     <Navback>
       <InnerDiv>
