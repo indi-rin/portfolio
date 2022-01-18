@@ -16,7 +16,7 @@ export const Navback = styled.div`
   margin-top: 0px;
   /* box-shadow: 0px 2px 10px ${colors.raisinBlack}; */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 `;
 
 export const NameHeader = styled.h1`
@@ -30,4 +30,18 @@ export const NameHeader = styled.h1`
 export const InnerDiv = styled.div`
   padding-top: 30px;
   padding-right: 30px;
+`;
+
+export const TabHeader = styled.div`
+  background-color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+`;
+
+export const PageTabs = styled.h2`
+  color: ${colors.indigoDye};
+  margin: 0px;
+  padding-top: 12px;
+  font-weight: normal;
 `;
