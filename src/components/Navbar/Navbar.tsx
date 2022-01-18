@@ -25,11 +25,18 @@ const Navbar: FC = () => {
         <Link to="/">
           <PageTabs>HOME</PageTabs>
         </Link>
+        <PageTabs>|</PageTabs>
         <Link to="/about">
           <PageTabs>ABOUT</PageTabs>
         </Link>
-        <PageTabs>PROJECTS</PageTabs>
-        <PageTabs>CONTACT</PageTabs>
+        <PageTabs>|</PageTabs>
+        <Link to="/projects">
+          <PageTabs>PROJECTS</PageTabs>
+        </Link>
+        <PageTabs>|</PageTabs>
+        <Link to="/contact">
+          <PageTabs>CONTACT</PageTabs>
+        </Link>
       </TabHeader>
     </>
   );
