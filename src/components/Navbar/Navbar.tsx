@@ -22,7 +22,12 @@ const Navbar: FC = () => {
       </InnerDiv> */}
       </Navback>
       <TabHeader>
-        <PageTabs>ABOUT</PageTabs>
+        <Link to="/">
+          <PageTabs>HOME</PageTabs>
+        </Link>
+        <Link to="/about">
+          <PageTabs>ABOUT</PageTabs>
+        </Link>
         <PageTabs>PROJECTS</PageTabs>
         <PageTabs>CONTACT</PageTabs>
       </TabHeader>
