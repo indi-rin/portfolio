@@ -1,7 +1,14 @@
 import React, { FC } from "react";
+import { Spacer } from "../../App.style";
+import { HomeImg } from "./Home.style";
 
 const Home: FC = () => {
-  return <h1>This is the home screen!</h1>;
+  return (
+    <>
+      <Spacer />
+      <HomeImg src="home.png" />
+    </>
+  );
 };
 
 export default Home;
