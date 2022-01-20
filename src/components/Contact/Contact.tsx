@@ -5,14 +5,19 @@ import {
   AiOutlineTwitter,
 } from "react-icons/ai";
 import { Spacer } from "../../App.style";
-
 const Contact: FC = () => {
   return (
     <div>
       <Spacer />
-      <AiFillLinkedin />
-      <AiOutlineGithub />
-      <AiOutlineTwitter />
+      <a href="https://www.linkedin.com/in/indigorinearson/">
+        <AiFillLinkedin color="white" size={50} />
+      </a>
+      <a href="https://github.com/indi-rin">
+        <AiOutlineGithub color="white" size={50} />
+      </a>
+      <a href="https://twitter.com/indi_rin">
+        <AiOutlineTwitter color="white" size={50} />
+      </a>
     </div>
   );
 };
