@@ -5,10 +5,13 @@ import {
   AiOutlineTwitter,
 } from "react-icons/ai";
 import { Spacer } from "../../App.style";
+import ContactForm from "./ContactForm";
+
 const Contact: FC = () => {
   return (
     <div>
       <Spacer />
+      <ContactForm />
       <a href="https://www.linkedin.com/in/indigorinearson/">
         <AiFillLinkedin color="white" size={50} />
       </a>
