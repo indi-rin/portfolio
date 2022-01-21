@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../App.style";
+import { Linkedin, Github, Twitter } from "@styled-icons/simple-icons";
 
 export const Container = styled.div`
   background-color: white;
@@ -20,4 +21,28 @@ export const Name = styled.h2`
 export const Bio = styled.p`
   text-align: left;
   color: ${colors.raisinBlack};
+`;
+
+export const LinkedIn = styled(Linkedin)`
+  color: ${colors.aero};
+  margin: 5px;
+  &:hover {
+    color: ${colors.indigoDye};
+  }
+`;
+
+export const GitHub = styled(Github)`
+  color: ${colors.aero};
+  margin: 5px;
+  &:hover {
+    color: ${colors.indigoDye};
+  }
+`;
+
+export const Twit = styled(Twitter)`
+  color: ${colors.aero};
+  margin: 5px;
+  &:hover {
+    color: ${colors.indigoDye};
+  }
 `;

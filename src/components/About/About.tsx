@@ -1,12 +1,6 @@
 import React, { FC } from "react";
-import { Container, Name, Bio } from "./About.style";
+import { Container, Name, Bio, LinkedIn, GitHub, Twit } from "./About.style";
 import { Spacer } from "../../App.style";
-import {
-  AiFillLinkedin,
-  AiOutlineGithub,
-  AiOutlineTwitter,
-} from "react-icons/ai";
-import { colors } from "../../App.style";
 
 const About: FC = () => {
   return (
@@ -35,13 +29,13 @@ const About: FC = () => {
           process of learning Ruby on Rails.
         </Bio>
         <a href="https://www.linkedin.com/in/indigorinearson/">
-          <AiFillLinkedin color={colors.aero} size={50} />
+          <LinkedIn size={40} />
         </a>
         <a href="https://github.com/indi-rin">
-          <AiOutlineGithub color={colors.aero} size={50} />
+          <GitHub size={50} />
         </a>
         <a href="https://twitter.com/indi_rin">
-          <AiOutlineTwitter color={colors.aero} size={50} />
+          <Twit size={50} />
         </a>
       </Container>
     </>
