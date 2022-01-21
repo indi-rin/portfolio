@@ -16,3 +16,9 @@ export const FormContent = styled.form`
 export const ContactInfo = styled.div`
   display: flex;
 `;
+
+export const ContactHeader = styled.h2`
+  font-family: Didot, serif;
+  font-weight: bold;
+  text-align: center;
+`;

@@ -1,27 +1,56 @@
-import React, { FC } from "react";
+import React, { FC, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import {
-  AiFillLinkedin,
-  AiOutlineGithub,
-  AiOutlineTwitter,
-} from "react-icons/ai";
+  FormBox,
+  FormContent,
+  ContactInfo,
+  ContactHeader,
+} from "./Contact.style";
 import { Spacer } from "../../App.style";
-import ContactForm from "./ContactForm";
 
 const Contact: FC = () => {
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_wpajelr",
+          "contact_form",
+          form.current,
+          "user_TMC5q1DawDHn5Jcqfr0vQ"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      form.current.reset();
+    }
+  };
   return (
-    <div>
+    <>
       <Spacer />
-      <ContactForm />
-      <a href="https://www.linkedin.com/in/indigorinearson/">
-        <AiFillLinkedin color="white" size={50} />
-      </a>
-      <a href="https://github.com/indi-rin">
-        <AiOutlineGithub color="white" size={50} />
-      </a>
-      <a href="https://twitter.com/indi_rin">
-        <AiOutlineTwitter color="white" size={50} />
-      </a>
-    </div>
+      <FormBox>
+        <ContactHeader>Send Me a Message:</ContactHeader>
+        <FormContent ref={form} onSubmit={sendEmail}>
+          <ContactInfo>
+            <label>Name</label>
+            <input type="text" name="user_name" />
+            <label>Email</label>
+            <input type="email" name="user_email" />
+          </ContactInfo>
+          <label>Message</label>
+          <textarea name="message" />
+          <input type="submit" value="Send" />
+        </FormContent>
+      </FormBox>
+    </>
   );
 };
 
