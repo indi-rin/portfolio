@@ -6,7 +6,7 @@ export const Container = styled.div`
   background-color: white;
   width: 75%;
   margin: auto;
-  margin-top: 75px;
+  margin-top: 50px;
   text-align: center;
   border-radius: 20px;
   padding: 10px 30px 10px 30px;
@@ -45,4 +45,9 @@ export const Twit = styled(Twitter)`
   &:hover {
     color: ${colors.indigoDye};
   }
+`;
+
+export const Links = styled.div`
+  margin-top: 30px;
+  margin-bottom: 15px;
 `;

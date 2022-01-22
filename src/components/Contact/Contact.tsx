@@ -5,6 +5,12 @@ import {
   FormContent,
   ContactInfo,
   ContactHeader,
+  SubmitBtn,
+  FormOutline,
+  FormLabel,
+  FormInput,
+  LabelInputCombo,
+  MsgInput,
 } from "./Contact.style";
 import { Spacer } from "../../App.style";
 
@@ -37,18 +43,26 @@ const Contact: FC = () => {
     <>
       <Spacer />
       <FormBox>
-        <ContactHeader>Send Me a Message:</ContactHeader>
-        <FormContent ref={form} onSubmit={sendEmail}>
-          <ContactInfo>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-          </ContactInfo>
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
-        </FormContent>
+        <ContactHeader>Send Me a Message</ContactHeader>
+        <FormOutline>
+          <FormContent ref={form} onSubmit={sendEmail}>
+            <ContactInfo>
+              <LabelInputCombo>
+                <FormLabel>Name:</FormLabel>
+                <FormInput type="text" name="user_name" />
+              </LabelInputCombo>
+              <LabelInputCombo>
+                <FormLabel>Email:</FormLabel>
+                <FormInput type="email" name="user_email" />
+              </LabelInputCombo>
+            </ContactInfo>
+            <FormLabel>Message:</FormLabel>
+            <MsgInput name="message" />
+            <SubmitBtn type="submit" value="Send">
+              Send
+            </SubmitBtn>
+          </FormContent>
+        </FormOutline>
       </FormBox>
     </>
   );

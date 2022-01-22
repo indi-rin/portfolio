@@ -1,5 +1,13 @@
 import React, { FC } from "react";
-import { Container, Name, Bio, LinkedIn, GitHub, Twit } from "./About.style";
+import {
+  Container,
+  Name,
+  Bio,
+  LinkedIn,
+  GitHub,
+  Twit,
+  Links,
+} from "./About.style";
 import { Spacer } from "../../App.style";
 
 const About: FC = () => {
@@ -28,15 +36,17 @@ const About: FC = () => {
           Always eager to continue learning and growing, I'm currently in the
           process of learning Ruby on Rails.
         </Bio>
-        <a href="https://www.linkedin.com/in/indigorinearson/">
-          <LinkedIn size={40} />
-        </a>
-        <a href="https://github.com/indi-rin">
-          <GitHub size={50} />
-        </a>
-        <a href="https://twitter.com/indi_rin">
-          <Twit size={50} />
-        </a>
+        <Links>
+          <a href="https://www.linkedin.com/in/indigorinearson/">
+            <LinkedIn size={40} />
+          </a>
+          <a href="https://github.com/indi-rin">
+            <GitHub size={50} />
+          </a>
+          <a href="https://twitter.com/indi_rin">
+            <Twit size={50} />
+          </a>
+        </Links>
       </Container>
     </>
   );
