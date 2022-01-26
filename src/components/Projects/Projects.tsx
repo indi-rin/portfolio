@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Spacer } from "../../App.style";
-import { Container, Header } from "./Projects.style";
+import { Container, Header, ProjectList, Project } from "./Projects.style";
 import Rumble from "./Rumble";
 import GamelanLegacy from "./GamelanLegacy";
 
@@ -10,8 +10,14 @@ const Projects: FC = () => {
       <Spacer />
       <Container>
         <Header>Projects</Header>
-        <Rumble />
-        <GamelanLegacy />
+        <ProjectList>
+          <Project>
+            <Rumble />
+          </Project>
+          <Project>
+            <GamelanLegacy />
+          </Project>
+        </ProjectList>
       </Container>
     </div>
   );

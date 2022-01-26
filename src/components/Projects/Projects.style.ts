@@ -37,3 +37,17 @@ export const Links = styled.a`
     color: ${colors.aero};
   }
 `;
+
+export const ProjectList = styled.div`
+  display: flex;
+`;
+
+export const Project = styled.div`
+  width: 50%;
+  padding: 10px;
+`;
+
+export const ProjectImg = styled.img`
+  width: 60%;
+  border-radius: 50%;
+`;

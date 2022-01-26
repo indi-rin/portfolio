@@ -1,14 +1,17 @@
 import React, { FC } from "react";
-import { Name, Descript, Links } from "./Projects.style";
+import { Name, Descript, Links, ProjectImg } from "./Projects.style";
 
 const GamelanLegacy: FC = () => {
   return (
     <>
+      <ProjectImg src="gamelan-legacy.png" />
       <Name>Gamelan Legacy</Name>
       <Descript>
         A very basic platformer game about wearing gamelans for armor and
-        creating music when you jump and run into your enemies. Built with
-        JavaScript and Phaser.
+        creating music when you jump and run into your enemies.
+      </Descript>
+      <Descript>
+        <b>Tech Stack:</b> JavaScript, Phaser
       </Descript>
       <Descript>
         <Links href="https://github.com/indi-rin/Gamelan">GitHub Repo</Links> •{" "}

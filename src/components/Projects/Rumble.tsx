@@ -1,16 +1,19 @@
 import React, { FC } from "react";
-import { Name, Descript, Links } from "./Projects.style";
+import { Name, Descript, Links, ProjectImg } from "./Projects.style";
 
 const Rumble: FC = () => {
   return (
     <>
+      <ProjectImg src="rumble.png" />
       <Name>Rumble</Name>
-
       <Descript>
         A mobile app where users can find, match, and chat with rivals so help
         challenge them to reach new heights, cross-developed for both iOS and
-        Android. Built with TypeScript, React Native, Expo, Styled-Components,
-        Firebase, and Firestore.
+        Android.
+      </Descript>
+      <Descript>
+        <b>Tech Stack:</b> TypeScript, React Native, Expo, Firebase + Firestore,
+        and Styled-Components
       </Descript>
       <Descript>
         <Links href="https://github.com/Team-Rumble/rumble">GitHub Repo</Links>{" "}
