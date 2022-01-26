@@ -21,13 +21,24 @@ export const Name = styled.h2`
   font-family: Didot, serif;
   color: ${colors.indigoDye};
   font-size: 20px;
-  text-align: left;
+  text-align: center;
   margin-top: 30px;
 `;
 
 export const Descript = styled.p`
   color: ${colors.raisinBlack};
-  text-align: left;
+  text-align: justify;
+`;
+
+export const LinkSection = styled.div`
+  color: ${colors.indigoDye};
+  text-align: center;
+  margin-top: 20px;
+`;
+
+export const Dates = styled(Descript)`
+  font-style: italic;
+  text-align: center;
 `;
 
 export const Links = styled.a`
@@ -44,10 +55,11 @@ export const ProjectList = styled.div`
 
 export const Project = styled.div`
   width: 50%;
-  padding: 10px;
+  padding: 30px 10px;
 `;
 
 export const ProjectImg = styled.img`
   width: 60%;
+  height: auto;
   border-radius: 50%;
 `;
