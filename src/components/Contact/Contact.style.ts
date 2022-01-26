@@ -31,10 +31,11 @@ export const SubmitBtn = styled.button`
   background-color: ${colors.indigoDye};
   color: ${colors.aero};
   /* font-family: Didot, serif; */
-  padding: 10px;
+  padding: 10px 30px;
   border-radius: 5px;
   border: 0px;
-  margin: 10px;
+  margin: 40px auto 10px;
+  display: block;
   &:hover {
     background-color: ${colors.aero};
     color: ${colors.indigoDye};
@@ -50,7 +51,7 @@ export const FormOutline = styled.div`
 `;
 
 export const FormLabel = styled.label`
-  margin: 5px 10px;
+  margin: 5px 10px 5px 0px;
   font-weight: bold;
   font-family: Didot, serif;
   color: ${colors.indigoDye};
@@ -72,8 +73,13 @@ export const MsgInput = styled.textarea`
   border-radius: 5px;
   border: 1px solid ${colors.indigoDye};
   color: ${colors.raisinBlack};
-  width: 75%;
+  width: 90%;
+  margin: auto;
   height: 200px;
   resize: none;
   padding: 5px;
+`;
+
+export const MsgDiv = styled.div`
+  width: 100%;
 `;

@@ -11,6 +11,7 @@ import {
   FormInput,
   LabelInputCombo,
   MsgInput,
+  MsgDiv,
 } from "./Contact.style";
 import { Spacer } from "../../App.style";
 
@@ -56,8 +57,10 @@ const Contact: FC = () => {
                 <FormInput type="email" name="user_email" />
               </LabelInputCombo>
             </ContactInfo>
-            <FormLabel>Message:</FormLabel>
-            <MsgInput name="message" />
+            <MsgDiv>
+              <FormLabel>Message:</FormLabel>
+              <MsgInput name="message" />
+            </MsgDiv>
             <SubmitBtn type="submit" value="Send">
               Send
             </SubmitBtn>
