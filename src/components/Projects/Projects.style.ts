@@ -50,11 +50,21 @@ export const Links = styled.a`
 
 export const ProjectList = styled.div`
   display: flex;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 
 export const Project = styled.div`
   width: 50%;
   padding: 30px;
+  margin: auto;
+
+  @media (max-width: 700px) {
+    width: 90%;
+    padding: 10px;
+  }
 `;
 
 export const ProjectImg = styled.img`
