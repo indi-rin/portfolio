@@ -4,8 +4,7 @@ import { colors } from "../../App.style";
 export const Container = styled.div`
   background-color: white;
   width: 75%;
-  margin: auto;
-  margin-top: 50px;
+  margin: 50px auto;
   text-align: center;
   border-radius: 20px;
   padding: 10px 30px 10px 30px;
@@ -55,7 +54,7 @@ export const ProjectList = styled.div`
 
 export const Project = styled.div`
   width: 50%;
-  padding: 30px 10px;
+  padding: 30px;
 `;
 
 export const ProjectImg = styled.img`
