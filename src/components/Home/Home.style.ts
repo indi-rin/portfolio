@@ -7,4 +7,10 @@ export const HomeImg = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: 860px) {
+    width: 80%;
+    height: auto;
+    margin-top: 50px;
+  }
 `;
