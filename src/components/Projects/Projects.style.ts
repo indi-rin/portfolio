@@ -22,6 +22,7 @@ export const Name = styled.h2`
   color: ${colors.indigoDye};
   font-size: 20px;
   text-align: left;
+  margin-top: 30px;
 `;
 
 export const Descript = styled.p`
