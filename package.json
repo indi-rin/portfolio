@@ -2,6 +2,9 @@
   "name": "portfolio-ts",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "17.x"
+  },
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@testing-library/jest-dom": "^5.16.1",
@@ -45,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.20"
+    "@types/styled-components": "^5.1.20",
+    "mini-css-extract-plugin": "2.5.1"
   }
 }
