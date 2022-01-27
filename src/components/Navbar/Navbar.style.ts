@@ -19,11 +19,6 @@ export const NameHeader = styled.h1`
   font-family: Didot, serif;
 `;
 
-export const InnerDiv = styled.div`
-  padding-top: 30px;
-  padding-right: 30px;
-`;
-
 export const TabHeader = styled.div`
   background-color: white;
   height: 50px;

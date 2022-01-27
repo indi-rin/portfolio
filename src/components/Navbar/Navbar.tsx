@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import {
   Navback,
   NameHeader,
-  InnerDiv,
   TabHeader,
   PageTabs,
   WholeNav,
