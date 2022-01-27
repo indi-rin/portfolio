@@ -39,6 +39,9 @@ export const PageTabs = styled.h2`
   &:hover {
     color: ${colors.aero};
   }
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 export const WholeNav = styled.div`
