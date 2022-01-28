@@ -33,8 +33,8 @@ const About: FC = () => {
           myself TypeScript to build a mobile app for my capstone project.
         </Bio>
         <Bio>
-          Always eager to continue learning and growing, I'm currently in the
-          process of learning Ruby on Rails.
+          Outside of programming, I enjoy baking (pies are my speciality),
+          ballroom dancing, creating art, and doing crossword puzzles.
         </Bio>
         <Links>
           <a href="https://www.linkedin.com/in/indigorinearson/">
