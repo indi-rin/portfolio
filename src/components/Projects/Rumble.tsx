@@ -15,7 +15,7 @@ const Rumble: FC = () => {
       <Name>Rumble</Name>
       <Dates>Nov. 2021 - current</Dates>
       <Descript>
-        A mobile app where users can find, match, and chat with rivals so help
+        A mobile app where users can find, match, and chat with rivals to help
         challenge them to reach new heights, cross-developed with three other
         engineers for both iOS and Android. I built the filtering and matching
         algorithms and front-end, styled the home screen and user profile
