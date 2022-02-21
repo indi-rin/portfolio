@@ -6,7 +6,7 @@
     "node": "17.x"
   },
   "author": "Indigo Rinearson",
-  "description": "Indigo Rinear's portfolio website",
+  "description": "Indigo Rinearson's portfolio website",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@testing-library/jest-dom": "^5.16.1",
