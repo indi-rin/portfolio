@@ -49,6 +49,7 @@ export const SubmitBtn = styled.button`
   border: 0px;
   margin: 20px auto 10px;
   display: block;
+  transition-duration: 0.7s;
   &:hover {
     background-color: ${colors.aero};
     color: ${colors.indigoDye};

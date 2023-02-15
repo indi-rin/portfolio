@@ -7,6 +7,7 @@ import {
   GitHub,
   Twit,
   Links,
+  Hyperlink,
 } from "./About.style";
 import { Spacer } from "../../App.style";
 
@@ -33,8 +34,10 @@ const About: FC = () => {
           myself TypeScript to build a mobile app for my capstone project.
         </Bio>
         <Bio>
-          I'm currently working at Axios HQ as a Solutions Engineer, writing
-          TypeScript & React on the frontend and Python & Django on the backend.
+          I'm currently working at{" "}
+          <Hyperlink href="https://www.axioshq.com/">Axios HQ</Hyperlink> as a
+          Solutions Engineer, writing TypeScript & React on the frontend and
+          Python & Django on the backend.
         </Bio>
         <Bio>
           Outside of programming, I enjoy baking (pies are my speciality),

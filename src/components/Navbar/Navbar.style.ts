@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { colors } from "../../App.style";
 
+const transDuration = "0.7s";
+
 export const Navback = styled.div`
   background-color: ${colors.indigoDye};
   padding: 0px;
@@ -31,6 +33,7 @@ export const PageTabs = styled.h2`
   color: ${colors.indigoDye};
   font-size: 18px;
   font-weight: normal;
+  transition-duration: ${transDuration};
   &:hover {
     color: ${colors.aero};
   }

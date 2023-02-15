@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { colors } from "../../App.style";
 import { Linkedin, Github, Twitter } from "@styled-icons/simple-icons";
 
+const transDuration = "0.7s";
+
 export const Container = styled.div`
   background-color: white;
   width: 75%;
@@ -25,6 +27,7 @@ export const Bio = styled.p`
 export const LinkedIn = styled(Linkedin)`
   color: ${colors.aero};
   margin: 5px;
+  transition-duration: ${transDuration};
   &:hover {
     color: ${colors.indigoDye};
   }
@@ -33,6 +36,7 @@ export const LinkedIn = styled(Linkedin)`
 export const GitHub = styled(Github)`
   color: ${colors.aero};
   margin: 5px;
+  transition-duration: ${transDuration};
   &:hover {
     color: ${colors.indigoDye};
   }
@@ -41,6 +45,7 @@ export const GitHub = styled(Github)`
 export const Twit = styled(Twitter)`
   color: ${colors.aero};
   margin: 5px;
+  transition-duration: ${transDuration};
   &:hover {
     color: ${colors.indigoDye};
   }
@@ -49,4 +54,11 @@ export const Twit = styled(Twitter)`
 export const Links = styled.div`
   margin-top: 30px;
   margin-bottom: 15px;
+`;
+
+export const Hyperlink = styled.a`
+  color: ${colors.indigoDye};
+  &:hover {
+    color: ${colors.aero};
+  }
 `;
