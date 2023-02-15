@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../../App.style";
 
-const breakpoint = "1000px";
+const breakpoint = "1200px";
 
 export const FormBox = styled.div`
   background-color: white;
@@ -18,6 +18,7 @@ export const FormBox = styled.div`
 
 export const FormContent = styled.form`
   margin: 50px;
+
   @media (max-width: ${breakpoint}) {
     margin: 10px;
   }
@@ -25,7 +26,7 @@ export const FormContent = styled.form`
 
 export const ContactInfo = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   @media (max-width: ${breakpoint}) {
     flex-direction: column;
   }
@@ -58,7 +59,7 @@ export const FormOutline = styled.div`
   border: 2px dotted ${colors.indigoDye};
   border-radius: 8px;
   width: 90%;
-  margin: 15px auto 15px auto;
+  margin: 15px auto;
   @media (max-width: ${breakpoint}) {
     border: white;
     padding: 0px 5px 5px;
@@ -102,8 +103,4 @@ export const MsgInput = styled.textarea`
   padding: 5px;
   display: block;
   margin: auto;
-`;
-
-export const MsgDiv = styled.div`
-  width: 90%;
 `;
