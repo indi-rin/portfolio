@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { colors } from "../../App.style";
 
+const breakpoint = "900px";
+
 export const Container = styled.div`
   background-color: white;
   width: 75%;
@@ -51,7 +53,7 @@ export const Links = styled.a`
 export const ProjectList = styled.div`
   display: flex;
 
-  @media (max-width: 700px) {
+  @media (max-width: ${breakpoint}) {
     flex-direction: column;
   }
 `;
@@ -61,7 +63,7 @@ export const Project = styled.div`
   padding: 30px;
   margin: auto;
 
-  @media (max-width: 700px) {
+  @media (max-width: ${breakpoint}) {
     width: 90%;
     padding: 10px;
   }
@@ -71,4 +73,9 @@ export const ProjectImg = styled.img`
   width: 60%;
   height: auto;
   border-radius: 50%;
+  transition-duration: 2s;
+  &:hover {
+    width: 100%;
+    border-radius: 10px;
+  }
 `;
